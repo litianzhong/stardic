@@ -1,4 +1,9 @@
 <?php
+/***
+ * 解析出字典信息
+ * @param string $path
+ * @return string
+ */
  function uncompress($path = null)
 {
 	ob_start();
