@@ -3,7 +3,7 @@
 require_once 'IdxParser.php';
 require_once 'InfoParser.php';
 $dictArray; // 全局信息
-$DIC_DIR=dirname(__FILE__)."/dict/";
+$DIC_DIR=dirname(__FILE__)."/dict/";//字典目录
 /**
  * ***
  * 加载信息
