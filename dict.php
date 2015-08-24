@@ -12,7 +12,7 @@ while ( true ) {
 	else {
 		$idxarr = IdxParser::getIdx ( $word );
 		foreach ( $idxarr as $key => $value ) {
-			echo "".$value ["ifo"];//输出字典信息
+			echo "\n".$value ["ifo"];//输出字典信息
 			echo getInfo ( $value ["file"], $value ["idx"] ["offset"], $value ["idx"] ["length"] ) . "\n";
 		}
 	}
