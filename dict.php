@@ -1,7 +1,7 @@
 <?php
 require_once 'Load.php';
 require_once 'DictParser.php';
-echo "正在启动字典程序时间较长，请稍后.....\n";
+echo "正在启动字典程序，时间较长，请稍后.....\n";
 $dict = new Load ();
 echo "启动字典成功.....\n";
 while ( true ) {
@@ -12,7 +12,7 @@ while ( true ) {
 	else {
 		$idxarr = IdxParser::getIdx ( $word );
 		foreach ( $idxarr as $key => $value ) {
-			echo "\n".$value ["ifo"];//输出自点信息
+			echo "\n".$value ["ifo"];//输出字典信息
 			echo getInfo ( $value ["file"], $value ["idx"] ["offset"], $value ["idx"] ["length"] ) . "\n";
 		}
 	}
