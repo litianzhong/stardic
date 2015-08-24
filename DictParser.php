@@ -11,7 +11,13 @@
 	$result = ob_get_clean();
 	return $result;
 }
-
+/***
+ * 获得解释信息
+ * @param  $path
+ * @param  $offset
+ * @param  $length
+ * @return string
+ */
 function getInfo($path,$offset,$length){
 	$retult=uncompress($path);
 	return substr($retult, $offset,$length);
